@@ -7,7 +7,7 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def test_upload_to_s3():   
-    breakpoint() 
+   
     s3_file = "test_directory/test_file.jpg"
     with patch("my_module.boto3.client") as mock_boto:
         s3_client = mock_boto.return_value
